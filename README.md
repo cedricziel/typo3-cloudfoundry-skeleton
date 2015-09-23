@@ -44,7 +44,7 @@ You can use dotenv to have more 12-factor style configuration ([http://12factor.
 
 ## Composer Github token
 
-To supply the token, you can either use cf set-env <your-app-name> COMPOSER_GITHUB_OAUTH_TOKEN "<oauth-token-value>", or you can add it to the env: block of your application manifest.
+To supply the token, you can either use ``cf set-env <your-app-name> COMPOSER_GITHUB_OAUTH_TOKEN "<oauth-token-value>"``, or you can add it to the env: block of your application manifest.
 
 ## Installing
 
