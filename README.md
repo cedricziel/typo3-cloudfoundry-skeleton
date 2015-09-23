@@ -49,7 +49,7 @@ To supply the token, you can either use ``cf set-env <your-app-name> COMPOSER_GI
 ## Installing
 
 1. Create a ClearDB service named ``mysql`` & set ``TYPO3_SYS_ENCRYPTIONKEY`` in manifest.yml
-2. Use ``cf-push`` to run the deployment
+2. Use ``cf push`` to run the deployment
 3. Open the backend at $domain/typo3 and finish the setup - the database credentials will be provided.
 4. Once finished, set the environment variables ``TYPO3_SYS_ISINITIALIMPORTDONE`` and ``TYPO3_SYS_ISINITIALINSTALLATIONINPROGRESS``
 
