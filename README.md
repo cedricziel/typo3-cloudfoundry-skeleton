@@ -71,3 +71,28 @@ As CF has no persistent file storage, you need to read some of them and sync the
 For example: Install extension, copy the new configuration to your local file.
 
 ``cf files $app-name app/web/typo3conf/PackageStates.php``
+
+## Blockers / Criticism
+
+As with most Platform-as-a-Service offerings, Cloud Foundry follows the 12 factor
+manifest, which imposes an immutable state of the application to ensure it can scale
+up and down and in and out at will.
+
+TYPO3 CMS doesnt offer this state (yet).
+
+Here's a few points:
+
+* official command line interface for, or rather with "admin commands"
+* no immutable configuration - it needs to be able to modify its own 
+  configuration on install
+* temporary storage. While php class caches are volatile, generated images are not
+
+## Proposals
+
+* Allow configuration via environment (no, security is no blocker in that regard. no, it's not overengineering to offer a direct source of configuration)
+* Allow for different targets for temporary images and assets - running an app multi-tenant makes local file caches a huge pain
+* Take running on public clouds in the easiest ways into account. AppEngine, Pivotal Cloudfoundry, ElasticBeanstalk, Heroku. - They are cheap and can scale fast.
+
+## Applause
+
+So far I'm pretty impressed as to how far the modernizing has gone! Thank you.
