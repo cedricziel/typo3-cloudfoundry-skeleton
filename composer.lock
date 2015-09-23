@@ -4,25 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "abeb3921f6004bdca0c6431864c9a484",
-    "content-hash": "c0e13c1eff7d1499947b92e816cba928",
+    "hash": "38c0e4dd42d25b504dadd8bd8a151355",
+    "content-hash": "42a8a1449209c064ba9ef6fa320e9f43",
     "packages": [
-        {
-            "name": "bk2k/bootstrap-package",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benjaminkott/bootstrap_package.git",
-                "reference": "master"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "BK2K\\BootstrapPackage\\": "Classes"
-                }
-            },
-            "time": "2015-08-28 12:46:33"
-        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
@@ -653,12 +637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "29d3f01a01f6b4278479308ab2d04c4e34b186a1"
+                "reference": "78e20942134e18ab5ec32a36b1a2c0effd0f960f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/29d3f01a01f6b4278479308ab2d04c4e34b186a1",
-                "reference": "29d3f01a01f6b4278479308ab2d04c4e34b186a1",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/78e20942134e18ab5ec32a36b1a2c0effd0f960f",
+                "reference": "78e20942134e18ab5ec32a36b1a2c0effd0f960f",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +831,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-09-23 15:48:27"
+            "time": "2015-09-23 19:48:56"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -961,8 +945,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "typo3/cms": 20,
-        "bk2k/bootstrap-package": 20
+        "typo3/cms": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
