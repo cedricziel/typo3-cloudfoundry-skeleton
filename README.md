@@ -48,14 +48,21 @@ To supply the token, you can either use ``cf set-env <your-app-name> COMPOSER_GI
 
 ## Installing
 
+### On Cloudfoundry
+
 1. Create a ClearDB service named ``mysql`` & set ``TYPO3_SYS_ENCRYPTIONKEY`` in manifest.yml
 2. Use ``cf push`` to run the deployment
 3. Open the backend at $domain/typo3 and finish the setup - the database credentials will be provided.
 4. Once finished, set the environment variables ``TYPO3_SYS_ISINITIALIMPORTDONE`` and ``TYPO3_SYS_ISINITIALINSTALLATIONINPROGRESS``
 
+### On your local machine
+
+1. Install composer
+2. Copy ``.env.example`` to ``.env``
+
 ## Run locally
 
-php -S localhost:8000 server.php
+``php -S localhost:8000 server.php``
 
 ## Reading files on your cloudfoundry instance
 
