@@ -1,6 +1,16 @@
 # TYPO3 CloudFoundry boilerplate
 
-Delivers a foundation for TYPO3 on any cloud foundry
+Delivers a foundation for TYPO3 CMS on any cloudfoundry deployment.
+
+## Walkthrough
+
+1. Open an account with Pivotal CloudFoundry (for example. https://run.pivotal.io)
+2. Install the CLI [https://docs.cloudfoundry.org/devguide/installcf/install-go-cli.html]
+3. login ``cf login -a https://api.run.pivotal.io -o yourorg -s development -u your@mail -p password``
+4. create a mysql-service with ClearDB named ``mysql``
+5. run ``cf push``. You should see your app pushed and it will tell you the target URL
+6. Open the the URL/typo3 and confirm the last steps of the install tool.
+7. Success! :)
 
 ## Structure
 
