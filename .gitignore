@@ -1,0 +1,9 @@
+# Exclude composer libs
+/vendor
+# Exclude linked sources
+/web/typo3temp
+/web/index.php
+/web/typo3
+/web/typo3conf/ext
+# Configuration
+.env
